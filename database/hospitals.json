@@ -1,0 +1,45 @@
+[
+    {
+        "id": 1,
+        "hospital_name": "Apollo Hospital",
+        "location": "Mysore, Karnataka",
+        "distance": "2 KM",
+        "status": "Available",
+        "phone": "9876543210",
+        "ambulance": true,
+        "beds_available": 12
+    },
+
+    {
+        "id": 2,
+        "hospital_name": "City Emergency Care",
+        "location": "Vijayanagar, Mysore",
+        "distance": "3.5 KM",
+        "status": "Available",
+        "phone": "9123456780",
+        "ambulance": true,
+        "beds_available": 8
+    },
+
+    {
+        "id": 3,
+        "hospital_name": "LifeLine Hospital",
+        "location": "Bangalore Road, Mysore",
+        "distance": "5 KM",
+        "status": "Busy",
+        "phone": "9988776655",
+        "ambulance": false,
+        "beds_available": 2
+    },
+
+    {
+        "id": 4,
+        "hospital_name": "Emergency Trauma Center",
+        "location": "Mandya",
+        "distance": "7 KM",
+        "status": "Available",
+        "phone": "9012345678",
+        "ambulance": true,
+        "beds_available": 15
+    }
+]

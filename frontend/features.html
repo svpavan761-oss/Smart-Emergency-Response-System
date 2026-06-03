@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Features - SPAM X</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:'Poppins', sans-serif;
+        }
+
+        body{
+            background:#050816;
+            color:white;
+            padding:30px;
+        }
+
+        /* Header */
+
+        .header{
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            margin-bottom:50px;
+        }
+
+        .logo{
+            font-size:35px;
+            font-weight:700;
+            color:#ff2e63;
+        }
+
+        .logo span{
+            color:white;
+        }
+
+        .back-btn{
+            text-decoration:none;
+            background:#ff2e63;
+            color:white;
+            padding:12px 25px;
+            border-radius:12px;
+            transition:0.3s;
+        }
+
+        .back-btn:hover{
+            background:white;
+            color:#ff2e63;
+        }
+
+        /* Title */
+
+        .title{
+            text-align:center;
+            margin-bottom:60px;
+        }
+
+        .title h1{
+            font-size:55px;
+            margin-bottom:15px;
+        }
+
+        .title h1 span{
+            color:#ff2e63;
+        }
+
+        .title p{
+            color:#ccc;
+            font-size:18px;
+        }
+
+        /* Features Container */
+
+        .features-container{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+            gap:30px;
+        }
+
+        .feature-card{
+            background:#11152c;
+            padding:35px;
+            border-radius:20px;
+            border:1px solid rgba(255,255,255,0.1);
+            transition:0.3s;
+            text-align:center;
+        }
+
+        .feature-card:hover{
+            transform:translateY(-10px);
+            border-color:#ff2e63;
+            box-shadow:0 0 20px rgba(255,46,99,0.3);
+        }
+
+        .feature-icon{
+            font-size:60px;
+            margin-bottom:20px;
+        }
+
+        .feature-card h2{
+            font-size:28px;
+            margin-bottom:15px;
+        }
+
+        .feature-card p{
+            color:#ccc;
+            line-height:30px;
+        }
+
+        /* Extra Section */
+
+        .extra-section{
+            margin-top:70px;
+            background:#11152c;
+            padding:50px;
+            border-radius:25px;
+            text-align:center;
+            border:2px solid rgba(255,46,99,0.3);
+        }
+
+        .extra-section h2{
+            font-size:45px;
+            margin-bottom:20px;
+        }
+
+        .extra-section p{
+            color:#ccc;
+            line-height:32px;
+            margin-bottom:30px;
+        }
+
+        .extra-btn{
+            display:inline-block;
+            padding:15px 35px;
+            background:#ff2e63;
+            color:white;
+            text-decoration:none;
+            border-radius:50px;
+            font-weight:600;
+            transition:0.3s;
+            box-shadow:0 0 20px rgba(255,46,99,0.5);
+        }
+
+        .extra-btn:hover{
+            background:white;
+            color:#ff2e63;
+            transform:translateY(-5px);
+        }
+
+        /* Responsive */
+
+        @media(max-width:700px){
+
+            .header{
+                flex-direction:column;
+                gap:20px;
+            }
+
+            .title h1{
+                font-size:40px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Header -->
+
+    <div class="header">
+
+        <div class="logo">
+            SPAM <span>X</span>
+        </div>
+
+        <a href="/" class="back-btn">
+            ← Back to Home
+        </a>
+
+    </div>
+
+    <!-- Title -->
+
+    <div class="title">
+
+        <h1>
+            Our <span>Features</span>
+        </h1>
+
+        <p>
+            Smart solutions for real-time emergency response and safety.
+        </p>
+
+    </div>
+
+    <!-- Features -->
+
+    <div class="features-container">
+
+        <!-- Feature 1 -->
+
+        <div class="feature-card">
+
+            <div class="feature-icon">🚑</div>
+
+            <h2>Ambulance Request</h2>
+
+            <p>
+                Instantly request nearby ambulance services during emergencies.
+            </p>
+
+        </div>
+
+        <!-- Feature 2 -->
+
+        <div class="feature-card">
+
+            <div class="feature-icon">🏥</div>
+
+            <h2>Nearby Hospitals</h2>
+
+            <p>
+                Find nearby hospitals with live availability and emergency support.
+            </p>
+
+        </div>
+
+        <!-- Feature 3 -->
+
+        <div class="feature-card">
+
+            <div class="feature-icon">📍</div>
+
+            <h2>Live Location</h2>
+
+            <p>
+                Detect user location in real time for faster emergency response.
+            </p>
+
+        </div>
+
+        <!-- Feature 4 -->
+
+        <div class="feature-card">
+
+            <div class="feature-icon">🩸</div>
+
+            <h2>Blood Donors</h2>
+
+            <p>
+                Search and connect with blood donors during critical situations.
+            </p>
+
+        </div>
+
+        <!-- Feature 5 -->
+
+        <div class="feature-card">
+
+            <div class="feature-icon">🚨</div>
+
+            <h2>SOS Alerts</h2>
+
+            <p>
+                Send emergency alerts instantly to emergency contacts and services.
+            </p>
+
+        </div>
+
+        <!-- Feature 6 -->
+
+        <div class="feature-card">
+
+            <div class="feature-icon">📞</div>
+
+            <h2>Emergency Contacts</h2>
+
+            <p>
+                Quick access to police, ambulance, fire station, and support numbers.
+            </p>
+
+        </div>
+
+    </div>
+
+    <!-- Extra Section -->
+
+    <div class="extra-section">
+
+        <h2>🚀 Smart Emergency Technology</h2>
+
+        <p>
+
+            SPAM X combines emergency services, hospital support,
+            live tracking, and SOS systems into one intelligent platform
+            designed to save lives faster.
+
+        </p>
+
+        <a href="dashboard.html" class="extra-btn">
+            Open Dashboard
+        </a>
+
+    </div>
+
+</body>
+</html>

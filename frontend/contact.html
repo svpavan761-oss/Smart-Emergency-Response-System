@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Emergency Contacts - SPAM X</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:'Poppins', sans-serif;
+        }
+
+        body{
+            background:#050816;
+            color:white;
+            padding:30px;
+        }
+
+        /* Header */
+
+        .header{
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            margin-bottom:40px;
+        }
+
+        .logo{
+            font-size:35px;
+            font-weight:700;
+            color:#ff2e63;
+        }
+
+        .logo span{
+            color:white;
+        }
+
+        .back-btn{
+            text-decoration:none;
+            background:#ff2e63;
+            color:white;
+            padding:12px 25px;
+            border-radius:12px;
+            transition:0.3s;
+        }
+
+        .back-btn:hover{
+            background:white;
+            color:#ff2e63;
+        }
+
+        /* Title */
+
+        .title{
+            text-align:center;
+            margin-bottom:50px;
+        }
+
+        .title h1{
+            font-size:50px;
+            margin-bottom:10px;
+        }
+
+        .title p{
+            color:#ccc;
+            font-size:18px;
+        }
+
+        /* Contact Container */
+
+        .contact-container{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+            gap:30px;
+        }
+
+        .contact-card{
+            background:#11152c;
+            padding:35px;
+            border-radius:20px;
+            border:1px solid rgba(255,255,255,0.1);
+            transition:0.3s;
+            text-align:center;
+        }
+
+        .contact-card:hover{
+            transform:translateY(-10px);
+            border-color:#ff2e63;
+            box-shadow:0 0 20px rgba(255,46,99,0.3);
+        }
+
+        .contact-icon{
+            font-size:60px;
+            margin-bottom:20px;
+        }
+
+        .contact-card h2{
+            font-size:30px;
+            margin-bottom:15px;
+        }
+
+        .contact-card p{
+            color:#ccc;
+            margin-bottom:10px;
+            line-height:28px;
+        }
+
+        .number{
+            font-size:28px;
+            color:#ff2e63;
+            font-weight:700;
+            margin-top:15px;
+        }
+
+        /* Buttons */
+
+        .btn{
+            display:inline-block;
+            margin-top:20px;
+            padding:12px 25px;
+            background:#ff2e63;
+            color:white;
+            text-decoration:none;
+            border-radius:10px;
+            font-weight:600;
+            transition:0.3s;
+        }
+
+        .btn:hover{
+            background:white;
+            color:#ff2e63;
+            transform:scale(1.05);
+        }
+
+        /* Emergency Help Box */
+
+        .help-box{
+            margin-top:60px;
+            background:#11152c;
+            padding:40px;
+            border-radius:25px;
+            text-align:center;
+            border:2px solid rgba(255,46,99,0.3);
+        }
+
+        .help-box h2{
+            font-size:40px;
+            margin-bottom:15px;
+        }
+
+        .help-box p{
+            color:#ccc;
+            margin-bottom:25px;
+        }
+
+        .help-btn{
+            padding:18px 50px;
+            border:none;
+            border-radius:50px;
+            background:#ff2e63;
+            color:white;
+            font-size:22px;
+            font-weight:700;
+            cursor:pointer;
+            transition:0.3s;
+            box-shadow:0 0 20px rgba(255,46,99,0.5);
+            animation:pulse 1.5s infinite;
+        }
+
+        .help-btn:hover{
+            background:white;
+            color:#ff2e63;
+        }
+
+        @keyframes pulse{
+
+            0%{
+                transform:scale(1);
+            }
+
+            50%{
+                transform:scale(1.05);
+            }
+
+            100%{
+                transform:scale(1);
+            }
+
+        }
+
+        /* Responsive */
+
+        @media(max-width:700px){
+
+            .title h1{
+                font-size:35px;
+            }
+
+            .header{
+                flex-direction:column;
+                gap:20px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Header -->
+
+    <div class="header">
+
+        <div class="logo">
+            SPAM <span>X</span>
+        </div>
+
+        <a href="dashboard.html" class="back-btn">
+            ← Back to Dashboard
+        </a>
+
+    </div>
+
+    <!-- Title -->
+
+    <div class="title">
+
+        <h1>📞 Emergency Contacts</h1>
+
+        <p>
+            Quick access to emergency support services.
+        </p>
+
+    </div>
+
+
+    <!-- Contact Cards -->
+
+
+    <div class="contact-container">
+
+        <!-- Police -->
+
+        <div class="contact-card">
+
+            <div class="contact-icon">👮</div>
+
+            <h2>Police</h2>
+
+            <p>
+                Contact police immediately during emergencies or crimes.
+            </p>
+
+            <div class="number">
+                100
+            </div>
+
+            <a href="https://www.google.com/maps/search/nearby+police+station/" target="_blank" class="btn">
+
+            Nearby Police
+
+            </a>
+
+        </div>
+
+        <!-- Ambulance -->
+
+        <div class="contact-card">
+
+            <div class="contact-icon">🚑</div>
+
+            <h2>Ambulance</h2>
+
+            <p>
+                Request emergency medical assistance instantly.
+            </p>
+
+            <div class="number">
+                108
+            </div>
+
+            <a href="https://www.google.com/maps/search/nearby+ambulance+service/" target="_blank" class="btn">
+
+             Nearby Ambulance
+
+            </a>
+
+        </div>
+
+        <!-- Fire Station -->
+
+        <div class="contact-card">
+
+            <div class="contact-icon">🔥</div>
+
+            <h2>Fire Station</h2>
+
+            <p>
+                Report fire accidents and rescue emergencies.
+            </p>
+
+            <div class="number">
+                101
+            </div>
+
+            <a href="https://www.google.com/maps/search/nearby+fire+station/" target="_blank" class="btn">
+                Nearby Fire Station
+            </a>
+
+        </div>
+
+    </div>
+
+    <!-- Emergency Help Box -->
+
+    <div class="help-box">
+
+        <h2>🚨 Need Immediate Help?</h2>
+
+        <p>
+            Press the emergency button below to send an SOS alert instantly.
+        </p>
+
+        <button class="help-btn" onclick="sendSOS()">
+            SEND SOS ALERT
+        </button>
+
+    </div>
+
+    <!-- JavaScript -->
+
+    <script>
+
+        function sendSOS(){
+
+            alert("🚨 SOS Alert Sent Successfully!");
+
+        }
+
+    </script>
+
+</body>
+</html>

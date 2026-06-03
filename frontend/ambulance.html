@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Ambulance Service - SPAM X</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:'Poppins', sans-serif;
+        }
+
+        body{
+            background:#050816;
+            color:white;
+            padding:30px;
+        }
+
+        /* Header */
+
+        .header{
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            margin-bottom:40px;
+        }
+
+        .logo{
+            font-size:35px;
+            font-weight:700;
+            color:#ff2e63;
+        }
+
+        .logo span{
+            color:white;
+        }
+
+        .back-btn{
+            text-decoration:none;
+            background:#ff2e63;
+            color:white;
+            padding:12px 25px;
+            border-radius:12px;
+            transition:0.3s;
+        }
+
+        .back-btn:hover{
+            background:white;
+            color:#ff2e63;
+        }
+
+        /* Title */
+
+        .title{
+            text-align:center;
+            margin-bottom:40px;
+        }
+
+        .title h1{
+            font-size:50px;
+            margin-bottom:10px;
+        }
+
+        .title p{
+            color:#ccc;
+        }
+
+        /* Ambulance Container */
+
+        .ambulance-container{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+            gap:30px;
+        }
+
+        .ambulance-card{
+            background:#11152c;
+            padding:30px;
+            border-radius:20px;
+            border:1px solid rgba(255,255,255,0.1);
+            transition:0.3s;
+        }
+
+        .ambulance-card:hover{
+            transform:translateY(-10px);
+            border-color:#ff2e63;
+            box-shadow:0 0 20px rgba(255,46,99,0.3);
+        }
+
+        .ambulance-icon{
+            font-size:60px;
+            margin-bottom:20px;
+        }
+
+        .ambulance-card h2{
+            margin-bottom:15px;
+            font-size:28px;
+        }
+
+        .ambulance-card p{
+            color:#ccc;
+            line-height:28px;
+            margin-bottom:10px;
+        }
+
+        /* Status */
+
+        .status{
+            display:inline-block;
+            padding:8px 18px;
+            border-radius:20px;
+            font-size:14px;
+            font-weight:600;
+            margin-top:10px;
+        }
+
+        .available{
+            background:#00c853;
+        }
+
+        .busy{
+            background:#ff1744;
+        }
+
+        /* Buttons */
+
+        .btn-group{
+            margin-top:20px;
+            display:flex;
+            gap:15px;
+            flex-wrap:wrap;
+        }
+
+        .btn{
+            text-decoration:none;
+            padding:12px 20px;
+            border-radius:10px;
+            font-weight:600;
+            transition:0.3s;
+            border:none;
+            cursor:pointer;
+        }
+
+        .request-btn{
+            background:#ff2e63;
+            color:white;
+        }
+
+        .track-btn{
+            background:white;
+            color:#050816;
+        }
+
+        .btn:hover{
+            transform:scale(1.05);
+        }
+
+        /* Emergency Section */
+
+        .emergency-box{
+            margin-top:50px;
+            background:#11152c;
+            padding:40px;
+            border-radius:25px;
+            text-align:center;
+            border:2px solid rgba(255,46,99,0.3);
+        }
+
+        .emergency-box h2{
+            font-size:40px;
+            margin-bottom:15px;
+        }
+
+        .emergency-box p{
+            color:#ccc;
+            margin-bottom:25px;
+        }
+
+        .emergency-btn{
+            padding:18px 50px;
+            border:none;
+            border-radius:50px;
+            background:#ff2e63;
+            color:white;
+            font-size:22px;
+            font-weight:700;
+            cursor:pointer;
+            transition:0.3s;
+            box-shadow:0 0 20px rgba(255,46,99,0.5);
+            animation:pulse 1.5s infinite;
+        }
+
+        .emergency-btn:hover{
+            background:white;
+            color:#ff2e63;
+        }
+
+        @keyframes pulse{
+
+            0%{
+                transform:scale(1);
+            }
+
+            50%{
+                transform:scale(1.05);
+            }
+
+            100%{
+                transform:scale(1);
+            }
+
+        }
+
+        /* Responsive */
+
+        @media(max-width:700px){
+
+            .title h1{
+                font-size:35px;
+            }
+
+            .header{
+                flex-direction:column;
+                gap:20px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Header -->
+
+    <div class="header">
+
+        <div class="logo">
+            SPAM <span>X</span>
+        </div>
+
+        <a href="dashboard.html" class="back-btn">
+            ← Back to Dashboard
+        </a>
+
+    </div>
+
+    <!-- Title -->
+
+    <div class="title">
+
+        <h1>🚑 Ambulance Services</h1>
+
+        <p>
+            Request emergency ambulance services instantly.
+        </p>
+
+    </div>
+
+    <!-- Ambulance Cards -->
+
+    <div class="ambulance-container">
+
+        <!-- Card 1 -->
+
+        <div class="ambulance-card">
+
+            <div class="ambulance-icon">🚑</div>
+
+            <h2>City Ambulance</h2>
+
+            <p>📍 Mysore City Center</p>
+
+            <p>📞 +91 9876543210</p>
+
+            <p>⏱ ETA: 5 Minutes</p>
+
+            <span class="status available">
+                Available
+            </span>
+
+            <div class="btn-group">
+
+                <button class="btn request-btn" onclick="requestAmbulance()">
+                    Request Ambulance
+                </button>
+
+                <button class="btn track-btn">
+                    Track Live
+                </button>
+
+            </div>
+
+        </div>
+
+        <!-- Card 2 -->
+
+        <div class="ambulance-card">
+
+            <div class="ambulance-icon">🚨</div>
+
+            <h2>Emergency Rescue</h2>
+
+            <p>📍 Vijayanagar, Mysore</p>
+
+            <p>📞 +91 9123456780</p>
+
+            <p>⏱ ETA: 8 Minutes</p>
+
+            <span class="status available">
+                Available
+            </span>
+
+            <div class="btn-group">
+
+                <button class="btn request-btn" onclick="requestAmbulance()">
+                    Request Ambulance
+                </button>
+
+                <button class="btn track-btn">
+                    Track Live
+                </button>
+
+            </div>
+
+        </div>
+
+        <!-- Card 3 -->
+
+        <div class="ambulance-card">
+
+            <div class="ambulance-icon">🏥</div>
+
+            <h2>LifeLine Ambulance</h2>
+
+            <p>📍 Bangalore Road</p>
+
+            <p>📞 +91 9988776655</p>
+
+            <p>⏱ ETA: 12 Minutes</p>
+
+            <span class="status busy">
+                Busy
+            </span>
+
+            <div class="btn-group">
+
+                <button class="btn request-btn">
+                    Unavailable
+                </button>
+
+                <button class="btn track-btn">
+                    Track Live
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Emergency Section -->
+
+    <div class="emergency-box">
+
+        <h2>🚨 Emergency Ambulance Request</h2>
+
+        <p>
+            Click below to instantly request the nearest available ambulance.
+        </p>
+
+        <button class="emergency-btn" onclick="emergencyAlert()">
+            SOS Ambulance
+        </button>
+
+    </div>
+
+    <!-- JavaScript -->
+
+    <script>
+
+        function requestAmbulance(){
+
+            alert("🚑 Ambulance Request Sent Successfully!");
+
+        }
+
+        function emergencyAlert(){
+
+            alert("🚨 Emergency SOS Alert Activated!");
+
+        }
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,51 @@
+[
+    {
+        "id": 1,
+        "name": "Rahul Kumar",
+        "blood_group": "O+",
+        "phone": "9876543210",
+        "location": "Mysore",
+        "distance": "2 KM",
+        "availability": "Available"
+    },
+
+    {
+        "id": 2,
+        "name": "Abhishek R",
+        "blood_group": "B+",
+        "phone": "9123456780",
+        "location": "Vijayanagar, Mysore",
+        "distance": "4 KM",
+        "availability": "Available"
+    },
+
+    {
+        "id": 3,
+        "name": "Pavan SV",
+        "blood_group": "A+",
+        "phone": "9988776655",
+        "location": "Bangalore Road",
+        "distance": "5 KM",
+        "availability": "Available"
+    },
+
+    {
+        "id": 4,
+        "name": "Subhasa",
+        "blood_group": "AB+",
+        "phone": "9012345678",
+        "location": "Mandya",
+        "distance": "7 KM",
+        "availability": "Busy"
+    },
+
+    {
+        "id": 5,
+        "name": "Madana",
+        "blood_group": "O-",
+        "phone": "9090909090",
+        "location": "Hassan",
+        "distance": "10 KM",
+        "availability": "Available"
+    }
+]
